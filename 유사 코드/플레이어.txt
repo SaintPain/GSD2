@@ -1,0 +1,17 @@
+public class 플레이어
+{
+	int pos = 0;
+	캐릭터 c캐릭터
+
+	public void Move(int count) //count만큼 맵을 이동
+	{
+		pos += count;
+		if( pos >= GameMng.mapLength )
+		{
+			c캐릭터.LevelUp();//한 바퀴를 돌았음 -> 스탯 상승
+			pos %= GameMng.mapLength; //맵의 최대 길이를 넘으면 안되기 때문 -> 나머지 연산
+		}
+
+		GameMng.I.Arrive(pos); //pos 타일에 도착
+	}
+}

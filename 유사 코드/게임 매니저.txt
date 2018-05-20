@@ -1,11 +1,27 @@
-class GameMng
+public class GameMng
 {
-	타일[20] c맵타일; //20칸짜리 타일 클래스 모음 (한 변에 6칸, 4칸 겹침) (선형 리스트?)
-	c플레이어List cl플레이어목록; //플레이어 목록 -> 리스트로 정리
+	public static GameMng I = null; //중복 방지 및 매니져 접근
+
+	public const int mapLength = 20; //맵의 최대 길이
+
+	타일[mapLength] c맵타일; //20칸짜리 타일 클래스 모음 (한 변에 6칸, 4칸 겹침) (선형 리스트?)
+	플레이어List cl플레이어목록; //플레이어 목록 -> 리스트로 정리
+
+	public GameMng()
+	{
+		if(I != null) //중복 방지
+			파괴();
+		I = this;
+	}
 
 	void RollDice() //주사위를 굴리는 함수
 	{
 		//주사위 굴리기
 		//그 값만큼 플레이어의 Move() 함수 호출
+	}
+
+	public void Arrive(플레이어 c플레이어, int tileNum) //특정 번호의 타일에 도착 -> 해당 타일의 Arrive 호출
+	{
+		c맵타일[tileNum].Arrive(c플레이어);
 	}
 }
