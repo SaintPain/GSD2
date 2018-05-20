@@ -1,5 +1,0 @@
-class map
-{
-	타일[20] mapLine; //20칸짜리 타일 클래스 모음
-	c플레이어List playerList; //플레이어 목록 -> 리스트로 정리
-}
