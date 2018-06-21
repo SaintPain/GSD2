@@ -18,3 +18,5 @@ https://drive.google.com/open?id=12cVuMyWXfpYWzr8BID5uHaSFNTxz2Nln
 https://drive.google.com/open?id=10EupCgblaMb1J8wq0uEnkCLslx6jwgq4
 //에셋 미적용 버전. 최종본.
 
+https://drive.google.com/open?id=1IJvfz97UtntT90k4UtiyHRiaQPcRzOgu
+// 에셋 적용 버전. (아이템 메세지 x)
